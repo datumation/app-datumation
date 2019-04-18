@@ -25,12 +25,13 @@ namespace app_datumation
         {
             Configuration = configuration;
         }
-    public CorsPolicy GenerateCorsPolicy()
+ public CorsPolicy GenerateCorsPolicy()
         {
             var corsBuilder = new CorsPolicyBuilder();
             corsBuilder.AllowAnyHeader();
             corsBuilder.AllowAnyMethod();
-            corsBuilder.AllowAnyOrigin(); // For anyone access.            
+            corsBuilder.AllowAnyOrigin(); // For anyone access.
+            corsBuilder.WithOrigins("https://app-datumation.azurewebsites.net"); // for a specific url. Don't add a forward slash on the end!
             corsBuilder.AllowCredentials();
             return corsBuilder.Build();
         }
@@ -118,7 +119,7 @@ namespace app_datumation
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-
+app.UseHttpsRedirection();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
