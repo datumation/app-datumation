@@ -18,7 +18,7 @@
     "Datumation": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5009;http://localhost:5000",
+      "applicationUrl": "https://app-datumation.azurewebsites.net;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
