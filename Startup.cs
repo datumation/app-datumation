@@ -31,7 +31,7 @@ namespace Datumation
             corsBuilder.AllowAnyHeader();
             corsBuilder.AllowAnyMethod();
             corsBuilder.AllowAnyOrigin(); // For anyone access.
-            corsBuilder.WithOrigins("https://app-datumation.azurewebsites.net"); // for a specific url. Don't add a forward slash on the end!
+            //corsBuilder.WithOrigins("https://app-datumation.azurewebsites.net"); // for a specific url. Don't add a forward slash on the end!
             corsBuilder.AllowCredentials();
             return corsBuilder.Build();
         }

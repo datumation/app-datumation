@@ -25,12 +25,13 @@ namespace Datumation
 
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("hosting.json", optional: true)
+               // .AddJsonFile("hosting.json", optional: true)
+                .AddJsonFile("appsettings.json", optional: false)
                 .AddCommandLine(args)
                 .Build();
 
             return WebHost.CreateDefaultBuilder(args)
-                .UseUrls("https://*:44350")
+          //      .UseUrls("https://*:44350")
                 .UseConfiguration(config)
                 .UseStartup<Startup>();
         }

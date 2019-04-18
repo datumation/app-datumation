@@ -28,6 +28,7 @@ import { ProviderService} from './provider/service/provider.service';
 import { CallbackComponent } from './callback/callback.component';
 import { PaymentFormComponent } from './payment/components/payment-form/payment-form.component';
 import { environment } from '../environments/environment';
+import { PaymentRegistrationComponent } from './payment/components/payment-registration/payment-registration.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { environment } from '../environments/environment';
     ProfileComponent,
     ProviderTypeDetailsComponent,
     CallbackComponent,
-    PaymentFormComponent
+    PaymentFormComponent,
+    PaymentRegistrationComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

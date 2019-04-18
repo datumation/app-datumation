@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  rootUrl: `https://localhost:5009/`,
   stripeKey: 'pk_test_pEYJlcUxkvLdXkPdl23gY92B00KNEsbcmc'
 };
 

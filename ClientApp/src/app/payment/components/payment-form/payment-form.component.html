@@ -1,4 +1,23 @@
 
+<div class="row">
+  <div class="col-xs-1-12">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Texas Complete File</h3>
+        <h5 class="card-subtitle"><span [(ngModel)]="price"></span></h5>
+        <p class="card-text">Text</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-1-12">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Title</h3>
+        <p class="card-text">Text</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <form id=paymentForm (ngSubmit)="buy(paymentForm.value)" #refForm="ngForm">
     <input type="text" name="name" placeholder="Jane Doe" />
@@ -7,3 +26,4 @@
     [elementsOptions]="elementsOptions" ></ngx-stripe-card>
     <input type="submit" value="Take My Money" />
 </form>
+

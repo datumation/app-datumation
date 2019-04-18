@@ -8,39 +8,61 @@ using Stripe;
 
 namespace Datumation.Controllers
 {
-    
- 
+
+
 
     [Route("api/[controller]")]
     public class PaymentsController : Controller
     {
 
+      public class ChargeModel
+      {
+        public string token {get;set;}
+        public string email {get;set;}
+        public string user {get;set;}
+        public long amount {get;set;}
+        public string product {get;set;}
+        public string description {get;set;}
+        
+        // form has button for one time download
+        // and another to subscribee
+        // public bool? subscription {get;set;}
+        
+      }
+      public class ChargeResponseModel
+      {
+        public string Message {get;set;}
+      }
+
         // from paymentform
-                [HttpPost]
+        [HttpPost]
         [Route("Charge")]
-        public IActionResult Charge(string  stripeEmail, string stripeToken)
-{
-    var customers = new CustomerService();
-    var charges = new ChargeService();
+        public IActionResult Charge([FromBody] ChargeModel chargeModel)
+        {
+            var customers = new CustomerService();
+            var charges = new ChargeService();
 
-    var customer = customers.Create(new CustomerCreateOptions {
-      Email = stripeEmail,
-      SourceToken = stripeToken
-    });
+            var customer = customers.Create(new CustomerCreateOptions
+            {
+                Email = chargeModel.email,
+                SourceToken = chargeModel.token
+            });
 
-    var charge = charges.Create(new ChargeCreateOptions {
-      Amount = 500,
+            var charge = charges.Create(new ChargeCreateOptions
+            {
+                Amount = chargeModel.amount,
 
-      Description = "Sample Charge",
-      Currency = "usd",
-      CustomerId = customer.Id
-    });
+                Description = chargeModel.description,
+                Currency = "usd",
+                CustomerId = customer.Id
+            });
 
-// insert into table user subscriptions
-// userid 
-// stateName
-// subscriptionEndOn
+            // insert into table user subscriptions
+            // userid 
+            // stateName
+            // subscriptionEndOn
 
-    return View();
-}}
+            return View();
+        }
+    }
 }

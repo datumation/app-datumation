@@ -7,7 +7,7 @@ using Dapper;
 using DapperExtensions;
 using Datumation.Providers.Models;
 using Microsoft.Extensions.Caching.Memory;
-using LinqKit;
+
 namespace Datumation.Providers.Repo
 {
     public interface IProviderRepo
