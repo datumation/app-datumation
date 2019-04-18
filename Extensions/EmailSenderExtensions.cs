@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using Datumation.Services;
+using app_datumation.Services;
 
-namespace Datumation.Services
+namespace app_datumation.Services
 {
     public static class EmailSenderExtensions
     {

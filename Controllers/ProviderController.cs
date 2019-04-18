@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace Datumation.Controllers
+namespace app_datumation.Controllers
 {
     
  

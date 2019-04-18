@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  stripeKey: 'pk_test_pEYJlcUxkvLdXkPdl23gY92B00KNEsbcmc'
+  stripeKey: 'pk_test_pEYJlcUxkvLdXkPdl23gY92B00KNEsbcmc',
+  projectUrl: `https://localhost:5009/`
 };
 
 // stripe = pk_test_pEYJlcUxkvLdXkPdl23gY92B00KNEsbcmc

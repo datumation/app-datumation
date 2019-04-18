@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Datumation.Controllers;
+using app_datumation.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Datumation.Extensions
+namespace app_datumation.Extensions
 {
     public static class UrlHelperExtensions
     {

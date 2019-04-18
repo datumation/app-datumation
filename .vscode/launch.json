@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/Datumation.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/app_datumation.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

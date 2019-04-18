@@ -1,4 +1,4 @@
-﻿namespace Datumation.Infrastructure.Logging
+﻿namespace app_datumation.Infrastructure.Logging
 {
     public class LogFactory
     {

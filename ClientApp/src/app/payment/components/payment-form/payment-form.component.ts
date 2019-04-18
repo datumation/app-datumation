@@ -1,3 +1,4 @@
+import { environment } from './../../../../environments/environment';
 
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import {FormGroup, FormControl, Validators } from '@angular/forms';
@@ -70,7 +71,7 @@ this.stripeService.createToken
 
 
           //make a call to the server
-          this.httpclient.post('https://localhost:5009/api/Payments/Charge',
+          this.httpclient.post(`${environment.projectUrl}/api/Payments/Charge`,
           JSON.stringify(obj),
           {headers: headers} ).subscribe( data => {
             console.log('---- Transaction Data -----');

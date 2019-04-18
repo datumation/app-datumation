@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Net;
 
-namespace Datumation.Infrastructure.Session
+namespace app_datumation.Infrastructure.Session
 {
     public static class AuthSession
     {

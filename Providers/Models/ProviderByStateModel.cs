@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Datumation.Providers.Models
+namespace app_datumation.Providers.Models
 {
     public class ProviderByStateModel
     {

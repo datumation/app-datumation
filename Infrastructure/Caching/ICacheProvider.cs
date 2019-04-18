@@ -1,4 +1,4 @@
-﻿namespace Datumation.Infrastructure.Caching
+﻿namespace app_datumation.Infrastructure.Caching
 {
     public interface ICacheProvider
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Datumation.Extensions
+namespace app_datumation.Extensions
 {
     public static class DataExtensions
     {

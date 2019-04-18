@@ -5,10 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
 using DapperExtensions;
-using Datumation.Providers.Models;
+using app_datumation.Providers.Models;
 using Microsoft.Extensions.Caching.Memory;
 using LinqKit;
-namespace Datumation.Providers.Repo
+namespace app_datumation.Providers.Repo
 {
     public interface IProviderRepo
     {
@@ -71,7 +71,7 @@ namespace Datumation.Providers.Repo
         }
     }
 
-    public class ProviderRepo : Datumation.Data.BaseRepo, IProviderRepo
+    public class ProviderRepo : app_datumation.Data.BaseRepo, IProviderRepo
     {
 
         private Task<List<Models.ProviderByTypeModel>> GetListAsync()

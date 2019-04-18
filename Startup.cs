@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
-using Datumation.Infrastructure.Caching;
+using app_datumation.Infrastructure.Caching;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -17,7 +17,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.FileProviders;
 
 
-namespace Datumation
+namespace app_datumation
 {
     public class Startup
     {
@@ -44,9 +44,9 @@ namespace Datumation
             services.AddSingleton<ICacheProvider, MemoryCacheProvider>();
             services.AddScoped<Providers.Repo.IProviderRepo, Providers.Repo.ProviderRepo>();
 
-                Datumation.Infrastructure.Logging.LogFactory.Initialize(new Datumation.Infrastructure.Logging.Logger());
-            Datumation.Infrastructure.Configuration.IAppConfiguration s = new Datumation.Infrastructure.Configuration.AppConfiguration(Configuration);
-            Datumation.Infrastructure.Configuration.ConfigurationFactory.Initialize(s);
+                app_datumation.Infrastructure.Logging.LogFactory.Initialize(new app_datumation.Infrastructure.Logging.Logger());
+            app_datumation.Infrastructure.Configuration.IAppConfiguration s = new app_datumation.Infrastructure.Configuration.AppConfiguration(Configuration);
+            app_datumation.Infrastructure.Configuration.ConfigurationFactory.Initialize(s);
             services.AddSingleton<Infrastructure.Logging.ILogFactory, Infrastructure.Logging.Logger>();
 
 

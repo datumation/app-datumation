@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Datumation
+namespace app_datumation
 {
     public class HasScopeHandler : AuthorizationHandler<HasScopeRequirement>
     {

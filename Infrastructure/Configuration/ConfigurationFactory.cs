@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Datumation.Infrastructure.Configuration
+namespace app_datumation.Infrastructure.Configuration
 {
     public class ConfigurationFactory
     {

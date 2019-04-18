@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "datumation": {
+    "app_datumation": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -145,5 +145,5 @@
       }
     }
   },
-  "defaultProject": "datumation"
+  "defaultProject": "app_datumation"
 }

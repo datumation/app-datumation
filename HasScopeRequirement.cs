@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Datumation
+namespace app_datumation
 {
     public class HasScopeRequirement : IAuthorizationRequirement
     {

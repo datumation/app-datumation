@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace Datumation.Data
+namespace app_datumation.Data
 {
     public abstract class BaseRepo
     {

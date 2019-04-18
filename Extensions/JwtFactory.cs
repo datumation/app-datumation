@@ -5,7 +5,7 @@ using System.Security.Principal;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.JsonWebTokens;
 
-namespace Datumation.Extensions
+namespace app_datumation.Extensions
 {
     //     public interface IJwtFactory
     //     {

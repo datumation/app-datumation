@@ -3,13 +3,13 @@ using System.Configuration;
 using System.Net;
 using System.Collections.Generic;
 using System.Net.Http;
-using Datumation.Infrastructure.Caching;
+using app_datumation.Infrastructure.Caching;
 using System.Linq;
 
-using Datumation.Infrastructure.Configuration;
+using app_datumation.Infrastructure.Configuration;
 using Microsoft.Extensions.Configuration;
 
-namespace Datumation.Infrastructure.Configuration
+namespace app_datumation.Infrastructure.Configuration
 {
     public class AppConfiguration : IAppConfiguration
     {

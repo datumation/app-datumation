@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Net;
 
-namespace Datumation.Infrastructure.EncodingHelpers
+namespace app_datumation.Infrastructure.EncodingHelpers
 {
     public class EncodingHelpers
     {

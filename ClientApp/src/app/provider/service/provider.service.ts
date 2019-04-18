@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment.prod';
 import { ProviderModel } from './../models/provider.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -10,11 +11,15 @@ export class ProviderService {
   private baseUrl: string;
 public providers: ProviderModel[];
 private headers: HttpHeaders;
-
+private rootUrl: string;
 constructor(public auth: AuthService,
   private http: HttpClient,
+
+
   @Inject('BASE_URL') _baseUrl: string) {
     this.baseUrl = `${_baseUrl}api`;
+    this.rootUrl = `${environment.projectUrl}`;
+
     this.headers = new HttpHeaders({'Content-Type': 'application/json; charset=utf-8'});
   }
 
@@ -27,7 +32,7 @@ constructor(public auth: AuthService,
   getAllProviderStates() {
     return this.http
     .get<ProviderModel[]>(
-      `${this.baseUrl}/Provider/ProviderStates`);
+      `${this.rootUrl}/Provider/ProviderStates`);
   }
 
   // get all provider model
@@ -35,13 +40,13 @@ constructor(public auth: AuthService,
   getAllProviderSpecialties() {
       return this.http
         .get<ProviderModel[]>(
-          `${this.baseUrl}/Provider/ProviderSpecialties`);
+          `${this.rootUrl}/Provider/ProviderSpecialties`);
 
   }
   getProviderStatesBySpecialty(specialty: string) {
     return this.http
     .post<ProviderModel[]>
-    (`${this.baseUrl}/Provider/ProviderStatesBySpecialty`,
+    (`${this.rootUrl}/Provider/ProviderStatesBySpecialty`,
     JSON.stringify({
       specialty: specialty
     }), {headers: this.headers});

@@ -1,10 +1,10 @@
-﻿using Datumation.Infrastructure.Caching;
+﻿using app_datumation.Infrastructure.Caching;
 using System.Net;
 using System.Net.Http;
 using System.Collections.Generic;
 
 
-namespace Datumation.Infrastructure.Configuration
+namespace app_datumation.Infrastructure.Configuration
 {
     /// <summary>
     /// app settings models

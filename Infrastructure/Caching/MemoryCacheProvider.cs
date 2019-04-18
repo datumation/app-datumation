@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Caching;
 
-namespace Datumation.Infrastructure.Caching
+namespace app_datumation.Infrastructure.Caching
 {
     public class MemoryCacheProvider : ICacheProvider
     {

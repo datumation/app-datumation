@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Datumation.Providers.Models;
-using Datumation.Providers.Repo;
+using app_datumation.Providers.Models;
+using app_datumation.Providers.Repo;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace Datumation.Providers.Service
+namespace app_datumation.Providers.Service
 {
 
 

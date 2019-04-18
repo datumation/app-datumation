@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 
 
-namespace Datumation.Models
+namespace app_datumation.Models
 {
     public class UsState 
     {

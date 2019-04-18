@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Datumation.Extensions
+namespace app_datumation.Extensions
 {
     public static class DictionaryExtenstions
     {

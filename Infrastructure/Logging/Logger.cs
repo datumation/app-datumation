@@ -1,13 +1,13 @@
-﻿using Datumation.Infrastructure.Logging;
+﻿using app_datumation.Infrastructure.Logging;
 using log4net;
-using Datumation.Infrastructure.Configuration;
+using app_datumation.Infrastructure.Configuration;
 using System;
 using System.Diagnostics;
 using System.Net.Mail;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Datumation.Infrastructure.Logging
+namespace app_datumation.Infrastructure.Logging
 {
     public class Logger : ILogFactory
     {

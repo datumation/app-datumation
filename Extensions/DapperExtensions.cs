@@ -2,7 +2,7 @@
 using System.Data;
 using System.Linq;
 
-namespace Datumation.Extensions
+namespace app_datumation.Extensions
 {
     public static class DapperExtensions
     {
