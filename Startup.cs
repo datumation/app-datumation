@@ -30,8 +30,7 @@ namespace app_datumation
             var corsBuilder = new CorsPolicyBuilder();
             corsBuilder.AllowAnyHeader();
             corsBuilder.AllowAnyMethod();
-            corsBuilder.AllowAnyOrigin(); // For anyone access.
-            corsBuilder.WithOrigins("https://localhost:5009"); // for a specific url. Don't add a forward slash on the end!
+            corsBuilder.AllowAnyOrigin(); // For anyone access.            
             corsBuilder.AllowCredentials();
             return corsBuilder.Build();
         }

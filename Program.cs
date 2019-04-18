@@ -12,7 +12,7 @@ namespace app_datumation
 {
     public class Program
     {
-          public static void Main(string[] args)
+        public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
 
@@ -26,11 +26,13 @@ namespace app_datumation
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("hosting.json", optional: true)
+                .AddJsonFile("appsettings.json", optional: true)
+                
                 .AddCommandLine(args)
                 .Build();
 
             return WebHost.CreateDefaultBuilder(args)
-                .UseUrls("https://*:44350")
+                // .UseUrls("https://*:44350")
                 .UseConfiguration(config)
                 .UseStartup<Startup>();
         }
