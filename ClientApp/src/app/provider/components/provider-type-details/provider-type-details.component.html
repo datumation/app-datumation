@@ -1,0 +1,413 @@
+<div >
+
+    <div *ngIf="attemptPurchase">
+
+        <div _ngcontent-c2="" aria-atomic="true" aria-live="polite"
+        style="position: absolute;min-height: -webkit-fill-available;top: 4px;right: 54px;/* max-height: 43px !important; */">
+        <div _ngcontent-c2="" [className]="my_Class"  class="showToast" style="/* position: absolute; *//* top: 0; *//* right: 0; */max-height: 112px;/* width: 280px; *//* font-size: 9px; */color: black;"><div _ngcontent-c2="" class="toast-header" style="
+          display: flex;
+          align-items: center;
+          padding: 2px 5px;
+          color: white;
+          background-color: #0b4a4a;
+          background-clip: padding-box;
+          /* border-bottom: solid 1px black; */
+          border: solid 1px;
+          max-width: 287px;
+          overflow: hidden;
+          font-size: 9px;
+          /* background-color: rgba(255,255,255,.85); */
+          background-clip: padding-box;
+          border: 1px solid rgba(0,0,0,.1);
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.83);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          opacity: 1;
+          border-radius: .25rem;
+          padding: .25rem .75rem;
+      "><strong _ngcontent-c2="" class="mr-auto">Datumation State Download</strong><small _ngcontent-c2="" style="
+          font-size: 6px;
+      ">Just now</small><button _ngcontent-c2="" aria-label="Close" class="ml-2 mb-1 close" (click)="dismissToast()"  data-dismiss="toast" type="button" style="
+          color: white;
+      "><span _ngcontent-c2="" aria-hidden="true">×</span></button></div><div _ngcontent-c2="" class="toast-body" style="
+          background-color: #0b4a4a;
+          /* max-height: 45px; */
+          display: flex;
+          align-items: center;
+          padding: 2px 5px;
+          color: black;
+          background-color: #ffffff;
+          background-clip: padding-box;
+          border-bottom: solid 1px black;
+          border: solid 1px;
+          max-width: 287px;
+          overflow: hidden;
+          font-size: 9px;
+          /* background-color: rgba(255,255,255,.85); */
+          background-clip: padding-box;
+          border: 1px solid rgba(0,0,0,.1);
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.83);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          opacity: 1;
+          border-radius: .25rem;
+          padding: .25rem .75rem;
+      "><div _ngcontent-c2="" id="noLoginMsg" style="
+          max-height: 100%;
+      "> HOWDY [NOPROFILE FOUND]! Thanks for expressing interest in our Delaware Dentist Dataset. <br _ngcontent-c2=""> Register to gain access to our data! </div></div></div></div>
+
+
+    </div>
+    <div *ngIf="purchaseConfirm">
+
+        <div _ngcontent-c2="" aria-atomic="true" aria-live="polite"
+        style="position: absolute;min-height: -webkit-fill-available;top: 4px;right: 54px;/* max-height: 43px !important; */">
+        <div _ngcontent-c2="" [className]="my_Class"  class="showToast" style="/* position: absolute; *//* top: 0; *//* right: 0; */max-height: 112px;/* width: 280px; *//* font-size: 9px; */color: black;"><div _ngcontent-c2="" class="toast-header" style="
+          display: flex;
+          align-items: center;
+          padding: 2px 5px;
+          color: white;
+          background-color: #0b4a4a;
+          background-clip: padding-box;
+          /* border-bottom: solid 1px black; */
+          border: solid 1px;
+          max-width: 287px;
+          overflow: hidden;
+          font-size: 9px;
+          /* background-color: rgba(255,255,255,.85); */
+          background-clip: padding-box;
+          border: 1px solid rgba(0,0,0,.1);
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.83);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          opacity: 1;
+          border-radius: .25rem;
+          padding: .25rem .75rem;
+      "><strong _ngcontent-c2="" class="mr-auto">Datumation Type Download</strong><small _ngcontent-c2="" style="
+          font-size: 6px;
+      ">Just now</small><button _ngcontent-c2="" aria-label="Close" class="ml-2 mb-1 close" (click)="dismissToast()"  data-dismiss="toast" type="button" style="
+          color: white;
+      "><span _ngcontent-c2="" aria-hidden="true">×</span></button></div><div _ngcontent-c2="" class="toast-body" style="
+          background-color: #0b4a4a;
+          /* max-height: 45px; */
+          display: flex;
+          align-items: center;
+          padding: 2px 5px;
+          color: black;
+          background-color: #ffffff;
+          background-clip: padding-box;
+          border-bottom: solid 1px black;
+          border: solid 1px;
+          max-width: 287px;
+          overflow: hidden;
+          font-size: 9px;
+          /* background-color: rgba(255,255,255,.85); */
+          background-clip: padding-box;
+          border: 1px solid rgba(0,0,0,.1);
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.83);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          opacity: 1;
+          border-radius: .25rem;
+          padding: .25rem .75rem;
+      "><div _ngcontent-c2="" id="noLoginMsg" style="
+          max-height: 100%;
+      ">        HOWDY {{auth.profile}}!  <br />
+                      Please confirm you would like to download the {{providerInfo.specialtyType}} ] Dataset.<br _ngcontent-c2="">
+                      <button (click)="downloadStateFile(providerInfo.specialtyType)" type="button" class="btn btn-outline-warning">
+                          Download Now?
+                        </button></div></div></div></div>
+
+    </div>
+
+
+      <main _ngcontent-c16="" class="mt-5 pt-4">
+        <div _ngcontent-c16="" class="container dark-grey-text mt-5">
+          <div _ngcontent-c16="" class="row">
+            <div _ngcontent-c16="" class="col-md-5">
+              <nav _ngcontent-c16="" aria-label="breadcrumb">
+                <ol _ngcontent-c16="" class="breadcrumb">
+                  <li _ngcontent-c16="" class="breadcrumb-item">
+
+                    <a [routerLink]="['/specialties']">Home</a>
+
+                  </li>
+                  <li _ngcontent-c16="" class="breadcrumb-item">
+                      <!-- <button (click)="goBack()">
+                          <-Back
+                      </button> -->
+
+                  </li>
+                  <li
+                    _ngcontent-c16=""
+                    aria-current="page"
+                    class="breadcrumb-item active"
+                  >
+                    Data
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div _ngcontent-c16="" class="row wow fadeIn">
+            <div _ngcontent-c16="" class="col-md-6 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 60 60"
+                style="enable-background:new 0 0 60 60;width: 70%;float:right; fill: #0b4a4a;"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    xmlns="http://www.w3.org/2000/svg"
+                    d="M42.5,30h-25c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S43.052,30,42.5,30z"
+                    style="
+              fill: white;
+          "
+                  ></path>
+                  <text
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="17%"
+                    y="51%"
+                    style="
+              font-size: 52%;
+          "
+                  >
+
+                  </text>
+                  <text
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="17%"
+                    y="71%"
+                    style="
+            font-size: 52%;
+        "
+                  >
+                    {{ providerInfo.specialtyType }}
+                  </text>
+                  <path
+                    d="M38.914,0H6.5v60h47V14.586L38.914,0z M39.5,3.414L50.086,14H39.5V3.414z M8.5,58V2h29v14h14v42H8.5z"
+                  ></path>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+            </div>
+            <div _ngcontent-c16="" class="col-md-6 mb-4">
+              <div _ngcontent-c16="" class="p-4">
+                <div _ngcontent-c16="" class="mb-3">
+                  <button
+                    _ngcontent-c16=""
+                    class=""
+                    style="
+                    /* width: 20%; */
+                    /* height: 22px; */
+                    /* padding: 3px; */
+                    display: inline-block;
+                    padding: 0.15em 2px 1px 0.2em;
+                    font-size: 75%;
+                    font-weight: 700;
+                    line-height: 1;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: baseline;
+                    border-radius: .25rem;
+                    background-color: #0b4a4a;
+                    color: white;
+                    border-radius: 7px;
+                    border: solid #0b4a4a;
+                "
+                    type="button"
+                  >
+                    Records<span _ngcontent-c16="" class="badge badge-light"
+                      >4</span
+                    >
+                  </button>
+                </div>
+                <p _ngcontent-c16="" class="lead">
+                  <span _ngcontent-c16="" class="mr-1"
+                    ><del _ngcontent-c16="">$200</del></span
+                  ><span _ngcontent-c16="">$100</span>
+                </p>
+                <p _ngcontent-c16="">Complete Database of {{ providerInfo.specialtyType }}</p>
+                <p _ngcontent-c16="" class="lead font-weight-bold">Description</p>
+                <p _ngcontent-c16="">
+                  You get their full name, address, phone no., fax no., plus
+                  medical specialty.            {{ providerInfo.specialtyType }} database updated on
+                  February 15, 2019 You get FREE access to our monthly updates,
+                  just log-in to your account Your satisfaction GUARANTEED or get
+                  100% refund within 30-days Download now and instantly import
+                  into any database or CRM program
+                </p>
+                <form _ngcontent-c16="" class="d-flex justify-content-left">
+                  <button    class=" my-0 p"
+
+                  style="
+            box-shadow: 0px 0px 8px 0.5px #0000006e;
+            border: solid 1px #fafafa !important;
+            padding: 0 15px;
+            line-height: 34px;
+            box-sizing: border-box;
+            position: relative;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            outline: 0;
+            border: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-block;
+            white-space: nowrap;
+            text-decoration: none;
+            vertical-align: baseline;
+            text-align: center;
+            margin: 0;
+            min-width: 64px;
+            line-height: 36px;
+            padding: 0 16px;
+            border-radius: 4px;
+            overflow: visible;
+            border-radius: 1px;
+            background-color: #0b4a4a;
+            color: white;
+        " (click)="downloadConfirm(providerInfo.specialtyType)" *ngIf="auth.isAuthenticated()">
+                    Download Now!
+                  </button>
+                  <button    class=" my-0 p"
+
+                  style="
+            box-shadow: 0px 0px 8px 0.5px #0000006e;
+            border: solid 1px #fafafa !important;
+            padding: 0 15px;
+            line-height: 34px;
+            box-sizing: border-box;
+            position: relative;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            outline: 0;
+            border: none;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-block;
+            white-space: nowrap;
+            text-decoration: none;
+            vertical-align: baseline;
+            text-align: center;
+            margin: 0;
+            min-width: 64px;
+            line-height: 36px;
+            padding: 0 16px;
+            border-radius: 4px;
+            overflow: visible;
+            border-radius: 1px;
+            background-color: #0b4a4a;
+            color: white;
+        " *ngIf="!auth.isAuthenticated()" (click)="buyNow()">
+                    Buy Now!
+                  </button>
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr
+            _ngcontent-c16=""
+            style="
+                    margin-bottom: 0px;
+                "
+          />
+          <div
+            _ngcontent-c16=""
+            style="
+                    /* margin-left: auto; */
+                    /* float: right; */
+                    height: 11px;
+                "
+          >
+            <nav
+              _ngcontent-c16=""
+              class="nav"
+              style="
+                    float: right;
+                    /* height: 89%; */
+                    font-size: 11px;
+                "
+            >
+              <a
+                _ngcontent-c16=""
+                class="nav-link disabled"
+                href="#"
+                style="
+                    float: right;
+                    text-align: right;
+                "
+                >Categories:</a
+              ><a _ngcontent-c16="" class="nav-link active" href="#"></a
+              ><a _ngcontent-c16="" class="nav-link" href="#"></a>
+            </nav>
+          </div>
+          <hr _ngcontent-c16="" />
+          <div
+            _ngcontent-c16=""
+            class="row d-flex justify-content-center wow fadeIn"
+          >
+            <div _ngcontent-c16="" class="col-md-6 text-center">
+              <h4 _ngcontent-c16="" class="my-4 h4">Additional information</h4>
+              <p _ngcontent-c16="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                suscipit modi sapiente illo soluta odit voluptates, quibusdam
+                officia. Neque quibusdam quas a quis porro? Molestias illo neque
+                eum in laborum.
+              </p>
+            </div>
+          </div>
+          <div _ngcontent-c16="" class="row wow fadeIn">
+            <div _ngcontent-c16="" class="col-lg-4 col-md-12 mb-4">
+              <img
+                _ngcontent-c16=""
+                alt=""
+                class="img-fluid"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg"
+              />
+            </div>
+            <div _ngcontent-c16="" class="col-lg-4 col-md-6 mb-4">
+              <img
+                _ngcontent-c16=""
+                alt=""
+                class="img-fluid"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg"
+              />
+            </div>
+            <div _ngcontent-c16="" class="col-lg-4 col-md-6 mb-4">
+              <img
+                _ngcontent-c16=""
+                alt=""
+                class="img-fluid"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
