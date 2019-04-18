@@ -116,10 +116,13 @@ namespace app_datumation
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+    app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-app.UseHttpsRedirection();
+            app.UseCors("*");
+            app.UseAuthentication();
+
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -139,6 +142,7 @@ app.UseHttpsRedirection();
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+            
         }
     }
 }

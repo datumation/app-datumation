@@ -65,8 +65,8 @@ import { environment } from '../environments/environment';
       {path: 'provider-type-details', component: ProviderTypeDetailsComponent},
       {path: 'callback', component: CallbackComponent},
       {path: 'payment-form', component: PaymentFormComponent},
-      {path: '**', redirectTo: ''},
       { path: 'provider-types', component: ProviderTypesComponent },
+      {path: '**', redirectTo: ''}
     ])
   ],
   providers: [AuthService, AuthGuardService, ProviderService, StripePaymentService],
