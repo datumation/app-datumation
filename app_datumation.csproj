@@ -16,28 +16,23 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.2.0"/>
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="2.2.10"/>
     <PackageReference Include="MvcDeviceDetector" Version="0.3.0"/>
-    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1"/>
-    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.1-dev-00771"/>
     <PackageReference Include="SolrNet.Core" Version="1.0.15"/>
-    <PackageReference Include="Stripe.net" Version="25.6.0"/>
-    <PackageReference Include="Dapper" Version="1.60.9"/>
-    <PackageReference Include="System.Runtime.Caching" Version="4.6.0-preview3.19128.7"/>
+    <PackageReference Include="Stripe.net" Version="25.8.0"/>
+    <PackageReference Include="Dapper" Version="1.60.6"/>
+    <PackageReference Include="System.Runtime.Caching" Version="4.5.0"/>
     <PackageReference Include="log4net" Version="2.0.8"/>
     <PackageReference Include="DotNetZip" Version="1.13.3"/>
-    <PackageReference Include="Wangkanai.Detection" Version="2.0.0-beta9"/>
+    <PackageReference Include="Wangkanai.Detection" Version="2.0.0-beta10"/>
     <PackageReference Include="Wangkanai.Detection.Core" Version="2.0.0-beta9"/>
     <PackageReference Include="Wangkanai.Detection.Device" Version="2.0.0-beta9"/>
     <PackageReference Include="NetlifySharp" Version="0.1.0"/>
     <PackageReference Include="SolrNet.Microsoft.DependencyInjection" Version="1.0.15"/>
     <PackageReference Include="SolrNet" Version="1.0.15"/>
-    <PackageReference Include="Serilog" Version="2.8.0"/>
-    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0-dev-00032"/>
     <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.2"/>
     <PackageReference Include="MoreLinq.Source.MoreEnumerable.DistinctBy" Version="1.0.2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="LinqKit.Core" Version="1.1.16"/>
   </ItemGroup>
   <ItemGroup>
     <Content Remove="$(SpaRoot)**"/>
@@ -49,7 +44,6 @@
       <Output TaskParameter="ExitCode" PropertyName="ErrorCode"/>
     </Exec>
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install"/>
-     <Exec Command="gulp clean" />
     <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE."/>
     <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..."/>
   </Target>
